@@ -10,7 +10,6 @@ With the rapid growth of online health content, misinformation has become a seri
 - Aligns extracted information with authoritative medical sources  
 - Evaluates the reliability of health information using Large Language Models (LLMs)
 
----
 
 ## 💡 Key Idea
 The pipeline follows:
@@ -24,7 +23,6 @@ Workflow:
 4. Compute **semantic similarity & match rate**  
 5. Perform **LLM-based verification**
 
----
 
 ## ⚙️ Methodology
 
@@ -36,13 +34,11 @@ Workflow:
   - WebMD  
   - PrimeKG (biomedical knowledge graph)
 
----
 
 ### 2. Triplet Extraction
 - Rule-based extraction (baseline)  
 - LLM-based extraction (main approach)
 
----
 
 ### 3. Prompt Engineering (Core Contribution)
 Four strategies were evaluated:
@@ -52,22 +48,18 @@ Four strategies were evaluated:
 - Few-shot Learning  *(main performance driver)*  
 - Self-Consistency  *(best stability)*  
 
----
 
 ### 4. Semantic Matching
 - Triplets converted into embeddings  
 - Cosine similarity for alignment  
 - Threshold: **0.6**
 
----
 
 ### 5. Cross-Model Verification
 Models compared:
 - DeepSeek  
 - OpenAI  
 - Gemini  
-
----
 
 ## Results
 
@@ -77,7 +69,6 @@ Models compared:
 - Few-shot learning improvement: **+3.15%**  
 - Self-consistency variance reduced to **0.04**
 
----
 
 ### 🔍 Key Findings
 - Few-shot learning significantly improves structured extraction  
@@ -85,7 +76,6 @@ Models compared:
 - Single-model pipelines show **self-validation bias**  
 - Cross-model validation improves reliability  
 
----
 
 ## 🧩 Project Structure
 ```bash
