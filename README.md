@@ -80,11 +80,12 @@ Models compared:
 ## 🧩 Project Structure
 ```bash
 health-info-pipeline/
-│── data/                  # transcripts & knowledge base
+│── data/                           # transcripts & knowledge base
 │── src/
-│   ├── extraction/        # triplet extraction
-│   ├── verification/      # semantic matching
-│   ├── prompts/           # prompt templates
-│── results/               # experiment outputs
+│   ├── get triple/                 # triplet extraction
+│   ├── get knowledge/              # knowledge extraction
+│   ├── embedding/                  # semantic matching
+│   ├── verificationveri/           
+│── results/                        # experiment outputs
 │── README.md
 ```
